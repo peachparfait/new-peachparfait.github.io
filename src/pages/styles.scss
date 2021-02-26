@@ -2,6 +2,7 @@ $font-stack: Helvetica, sans-serif;
 $primaryColor: #333;
 $thumbnailBackground: #ccc;
 $aboutMeBackground: #bbb;
+$worksBackground: #ccc;
 
 body {
   font: 100% $font-stack;
@@ -18,6 +19,11 @@ body {
 }
 
 .aboutme{
-  height: 600px;
+  height: 100vh;
   background-color: $aboutMeBackground;
+}
+
+.works{
+  height: 100vh;
+  background-color: $worksBackground;
 }

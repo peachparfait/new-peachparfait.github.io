@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Works = () => {
     return (
-        <p>works</p>
+        <div class="works">works</div>
     )
   }
 
