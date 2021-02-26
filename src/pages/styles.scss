@@ -45,6 +45,8 @@ body {
   height: 100vh;
   background-color: $articlesBackground;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer{
@@ -93,4 +95,21 @@ body {
   margin:10px auto;
   position: relative;
   top:-150px;
+  z-index: 0;
+}
+.articlesText{
+  background-color: $white;
+  width: 500px;
+  height: 200px;
+  margin:10px 30px;
+  z-index: 1;
+}
+.articlesObjects{
+  background-color: #666;
+  width: 1300px;
+  height: 500px;
+  margin:10px auto;
+  position: relative;
+  top:-150px;
+  z-index: 0;
 }
