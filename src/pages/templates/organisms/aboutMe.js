@@ -1,5 +1,5 @@
 import * as React from "react";
-import Profile from "./molecules/textBlocks";
+import Profile from "./molecules/profile";
 
 const AboutMe = () => {
     return (

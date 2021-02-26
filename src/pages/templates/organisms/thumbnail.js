@@ -1,5 +1,5 @@
 import * as React from "react";
-import Ad from "./molecules/3dModelBlocks";
+import Ad from "./molecules/thumbnailObjects";
 
 const Thumbnail = () => {
     return (
