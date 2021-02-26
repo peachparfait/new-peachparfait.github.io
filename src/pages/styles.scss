@@ -28,6 +28,7 @@ body {
   height: 100vh;
   background-color: $aboutMeBackground;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -66,5 +67,12 @@ body {
   background-color: $white;
   width: 250px;
   height: 250px;
-  margin:30px 80px;
+  margin:35px 80px;
+}
+
+.history{
+  background-color: $white;
+  width: 1300px;
+  height: 250px;
+  margin:10px auto;
 }
