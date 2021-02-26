@@ -53,6 +53,9 @@ body {
   height: 200px;
   background-color: $footerBackground;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ad{
@@ -112,4 +115,10 @@ body {
   position: relative;
   top:-150px;
   z-index: 0;
+}
+.footerText{
+  background-color: $white;
+  width: 800px;
+  height: 100px;
+  margin:10px auto;
 }

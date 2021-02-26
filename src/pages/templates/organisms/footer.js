@@ -1,8 +1,11 @@
 import * as React from "react";
+import FooterText from "./molecules/footerText";
 
 const Footer = () => {
     return (
-        <div className="footer">footer</div>
+        <div className="footer">
+          <FooterText />
+        </div>
     )
   }
 
