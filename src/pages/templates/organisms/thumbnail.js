@@ -1,8 +1,11 @@
 import * as React from "react";
+import Ad from "./molecules/3dModelBlocks";
 
 const Thumbnail = () => {
     return (
-        <div className="thumbnail">thumbnail</div>
+        <div className="thumbnail">
+          <Ad />
+        </div>
     )
   }
 

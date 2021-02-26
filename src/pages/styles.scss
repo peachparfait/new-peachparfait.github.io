@@ -5,7 +5,7 @@ $aboutMeBackground: #bbb;
 $worksBackground: #ccc;
 $articlesBackground: #bbb;
 $footerBackground: #ccc;
-
+$white: #fff;
 body {
   font: 100% $font-stack;
   color: $primaryColor;
@@ -18,6 +18,9 @@ body {
 .thumbnail{
   height: 100vh;
   background-color: $thumbnailBackground;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutme{
@@ -38,4 +41,10 @@ body {
 .footer{
   height: 200px;
   background-color: $footerBackground;
+}
+
+.ad{
+  background-color: $white;
+  width: 1300px;
+  height: 600px;
 }
