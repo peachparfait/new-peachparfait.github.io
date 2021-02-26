@@ -21,30 +21,43 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .aboutme{
   height: 100vh;
   background-color: $aboutMeBackground;
+  display: flex;
+  margin: 0;
 }
 
 .works{
   height: 100vh;
   background-color: $worksBackground;
+  margin: 0;
 }
 
 .articles{
   height: 100vh;
   background-color: $articlesBackground;
+  margin: 0;
 }
 
 .footer{
   height: 200px;
   background-color: $footerBackground;
+  margin: 0;
 }
 
 .ad{
   background-color: $white;
   width: 1300px;
   height: 600px;
+}
+
+.profile{
+  background-color: $white;
+  width: 800px;
+  height: 300px;
+  margin:10px 30px;
 }
