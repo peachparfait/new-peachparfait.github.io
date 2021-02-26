@@ -1,6 +1,6 @@
-import * as React from "react"
-import "./styles.scss"
-
+import * as React from "react";
+import "./styles.scss";
+import Index from "./templates/index";
 
 // data
 const links = [
@@ -18,9 +18,9 @@ const IndexPage = () => {
   return (
     <main>
       <title>parfait9</title>
-      <p>test</p>
+      <Index />
     </main>
   )
 }
 
-export default IndexPage
+export default IndexPage;
