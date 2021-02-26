@@ -3,6 +3,7 @@ $primaryColor: #333;
 $thumbnailBackground: #ccc;
 $aboutMeBackground: #bbb;
 $worksBackground: #ccc;
+$articlesBackground: #bbb;
 
 body {
   font: 100% $font-stack;
@@ -26,4 +27,9 @@ body {
 .works{
   height: 100vh;
   background-color: $worksBackground;
+}
+
+.articles{
+  height: 100vh;
+  background-color: $articlesBackground;
 }
