@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Thumbnail = () => {
     return (
-        <p>thumbnail</p>
+        <div className="thumbnail">thumbnail</div>
     )
   }
 

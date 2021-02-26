@@ -1,10 +1,16 @@
 $font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+$primaryColor: #333;
+$testBackground: #ccc;
 
 body {
   font: 100% $font-stack;
-  color: $primary-color;
+  color: $primaryColor;
 }
 .fixed{
   position: fixed;
+}
+
+.thumbnail{
+  height: 100vh;
+  background-color: $testBackground;
 }
