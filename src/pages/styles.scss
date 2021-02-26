@@ -36,6 +36,9 @@ body {
   height: 100vh;
   background-color: $worksBackground;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .articles{
@@ -75,4 +78,10 @@ body {
   width: 1300px;
   height: 250px;
   margin:10px auto;
+}
+.worksText{
+  background-color: $white;
+  width: 500px;
+  height: 200px;
+  margin:10px 30px;
 }
