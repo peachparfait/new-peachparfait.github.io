@@ -4,6 +4,7 @@ $thumbnailBackground: #ccc;
 $aboutMeBackground: #bbb;
 $worksBackground: #ccc;
 $articlesBackground: #bbb;
+$footerBackground: #ccc;
 
 body {
   font: 100% $font-stack;
@@ -32,4 +33,9 @@ body {
 .articles{
   height: 100vh;
   background-color: $articlesBackground;
+}
+
+.footer{
+  height: 200px;
+  background-color: $footerBackground;
 }
