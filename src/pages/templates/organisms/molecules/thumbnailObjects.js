@@ -1,8 +1,11 @@
 import * as React from "react";
+import MyName from "./atoms/myName";
 
 const Ad = () => {
     return (
-        <div className="ad">ad</div>
+        <div className="ad">
+          <MyName />
+        </div>
     )
   }
 
