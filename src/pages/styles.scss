@@ -1,11 +1,12 @@
 $font-stack: Helvetica, sans-serif;
 $primaryColor: #333;
-$thumbnailBackground: #ccc;
-$aboutMeBackground: #bbb;
-$worksBackground: #ccc;
-$articlesBackground: #bbb;
-$footerBackground: #ccc;
+$thumbnailBackground: #262626;
+$aboutMeBackground: #006494;
+$worksBackground: #DC493A;
+$articlesBackground: #fff;
+$footerBackground: #262626;
 $white: #fff;
+$contentsHeight: 120vh;
 body {
   font: 100% $font-stack;
   color: $primaryColor;
@@ -16,16 +17,39 @@ body {
 }
 
 .thumbnail{
-  height: 100vh;
+  height: $contentsHeight;
   background-color: $thumbnailBackground;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0;
 }
+.aboutme::before,.works::before,.articles::before{
+  content:"";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.aboutme::before,.articles::before{
+  border-width: 0 98.75vw  40px 0;
+}
+.works::before{
+  border-width: 0 0 40px 98.75vw;
+}
+.aboutme::before{
+  border-color: transparent  $thumbnailBackground  transparent transparent;
+}
+.works::before{
+  border-color: transparent transparent transparent $aboutMeBackground;
+}
 
+.articles::before{
+  border-color: transparent  $worksBackground  transparent transparent;
+}
 .aboutme{
-  height: 100vh;
+  height: $contentsHeight;
   background-color: $aboutMeBackground;
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +57,7 @@ body {
 }
 
 .works{
-  height: 100vh;
+  height: $contentsHeight;
   background-color: $worksBackground;
   margin: 0;
   display: flex;
@@ -42,7 +66,7 @@ body {
 }
 
 .articles{
-  height: 100vh;
+  height: $contentsHeight;
   background-color: $articlesBackground;
   margin: 0;
   display: flex;
@@ -59,11 +83,12 @@ body {
 }
 
 .ad{
-  background-color: $white;
   width: 1300px;
   height: 600px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  top: 15px;
 }
 
 .profile{
@@ -128,4 +153,14 @@ body {
   background-color: #ccc;
   width: 800px;
   margin:10px 10px;
+}
+.github,.scratch,.twitter{
+  background-color: #ccc;
+  width: 450px;
+  margin:10px 10px 0 10px;
+  height: 185px;
+}
+.snsLinks{
+  display: flex;
+  flex-direction: column;
 }
