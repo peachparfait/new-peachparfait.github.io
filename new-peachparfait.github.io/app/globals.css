@@ -1,26 +1,205 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
+  --font-stack: Helvetica, sans-serif;
+  --primary-color: #333;
+  --thumbnail-background: #262626;
+  --about-me-background: #006494;
+  --works-background: #dc493a;
+  --articles-background: #fff;
+  --footer-background: #262626;
+  --white: #fff;
+  --contents-height: 120vh;
+  --background: #fff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  height: 100%;
 }
 
 body {
+  min-height: 100%;
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-stack);
+}
+
+a {
+  color: inherit;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.thumbnail {
+  height: var(--contents-height);
+  background-color: var(--thumbnail-background);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.aboutme::before,
+.works::before,
+.articles::before {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.aboutme::before,
+.articles::before {
+  border-width: 0 98.75vw 40px 0;
+}
+
+.works::before {
+  border-width: 0 0 40px 98.75vw;
+}
+
+.aboutme::before {
+  border-color: transparent var(--thumbnail-background) transparent transparent;
+}
+
+.works::before {
+  border-color: transparent transparent transparent var(--about-me-background);
+}
+
+.articles::before {
+  border-color: transparent var(--works-background) transparent transparent;
+}
+
+.aboutme {
+  height: var(--contents-height);
+  background-color: var(--about-me-background);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.works {
+  height: var(--contents-height);
+  background-color: var(--works-background);
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.articles {
+  height: var(--contents-height);
+  background-color: var(--articles-background);
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 200px;
+  background-color: var(--footer-background);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad {
+  width: 1300px;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 15px;
+}
+
+.profile {
+  background-color: var(--white);
+  width: 800px;
+  height: 300px;
+  margin: 10px 30px;
+}
+
+.icon {
+  background-color: var(--white);
+  width: 250px;
+  height: 250px;
+  margin: 35px 80px;
+}
+
+.history {
+  background-color: var(--white);
+  width: 1300px;
+  height: 250px;
+  margin: 10px auto;
+}
+
+.worksText {
+  background-color: var(--white);
+  width: 500px;
+  height: 200px;
+  margin: 10px 30px;
+  z-index: 1;
+}
+
+.worksObjects {
+  background-color: #666;
+  width: 1300px;
+  height: 500px;
+  margin: 10px auto;
+  position: relative;
+  top: -150px;
+  z-index: 0;
+}
+
+.articlesText {
+  background-color: var(--white);
+  width: 500px;
+  height: 200px;
+  margin: 10px 30px;
+  z-index: 1;
+}
+
+.articlesObjects {
+  background-color: #666;
+  width: 1300px;
+  height: 500px;
+  margin: 10px auto;
+  position: relative;
+  top: -150px;
+  z-index: 0;
+}
+
+.footerText {
+  background-color: var(--white);
+  width: 800px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.myName {
+  background-color: #ccc;
+  width: 800px;
+  margin: 10px 10px;
+}
+
+.github,
+.scratch,
+.twitter {
+  background-color: #ccc;
+  width: 450px;
+  margin: 10px 10px 0 10px;
+  height: 185px;
+}
+
+.snsLinks {
+  display: flex;
+  flex-direction: column;
 }
