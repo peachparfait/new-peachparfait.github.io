@@ -2,7 +2,7 @@ import Fixed from "./organisms/fixed";
 import Thumbnail from "./organisms/thumbnail";
 import AboutMe from "./organisms/aboutMe";
 import Works from "./organisms/works";
-import Articles from "./organisms/articles";
+import WorksPast from "./organisms/worksPast";
 import Footer from "./organisms/footer";
 
 export default function Index() {
@@ -12,7 +12,7 @@ export default function Index() {
       <Thumbnail />
       <AboutMe />
       <Works />
-      <Articles />
+      <WorksPast />
       <Footer />
     </div>
   );

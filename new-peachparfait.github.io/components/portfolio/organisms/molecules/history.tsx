@@ -1,3 +1,8 @@
+import AssetImage from "./assetImage";
+
 export default function History() {
-  return <div className="history">history</div>;
+  return (
+    <div className="history">
+    </div>
+  );
 }

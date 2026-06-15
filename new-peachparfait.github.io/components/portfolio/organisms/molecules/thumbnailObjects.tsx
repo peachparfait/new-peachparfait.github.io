@@ -7,7 +7,6 @@ export default function Ad() {
       <div className="snsLinks">
         <SNSLink classname="github" link="github" />
         <SNSLink classname="scratch" link="scratch" />
-        <SNSLink classname="twitter" link="coming soon" />
       </div>
       <MyName />
     </div>

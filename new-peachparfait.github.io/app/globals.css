@@ -1,11 +1,11 @@
 :root {
   --font-stack: Helvetica, sans-serif;
   --primary-color: #333;
-  --thumbnail-background: #262626;
-  --about-me-background: #006494;
-  --works-background: #dc493a;
-  --articles-background: #fff;
-  --footer-background: #262626;
+  --thumbnail-background: #5785a8;
+  --about-me-background: #6e8bb9;
+  --works-background: #655b8f;
+  --works-past-background: #c07c92;
+  --footer-background: #c29989;
   --white: #fff;
   --contents-height: 120vh;
   --background: #fff;
@@ -46,7 +46,7 @@ a {
 
 .aboutme::before,
 .works::before,
-.articles::before {
+.worksPast::before {
   content: "";
   position: relative;
   bottom: 0;
@@ -57,7 +57,7 @@ a {
 }
 
 .aboutme::before,
-.articles::before {
+.worksPast::before {
   border-width: 0 98.75vw 40px 0;
 }
 
@@ -73,7 +73,7 @@ a {
   border-color: transparent transparent transparent var(--about-me-background);
 }
 
-.articles::before {
+.worksPast::before {
   border-color: transparent var(--works-background) transparent transparent;
 }
 
@@ -94,9 +94,9 @@ a {
   justify-content: flex-end;
 }
 
-.articles {
+.worksPast {
   height: var(--contents-height);
-  background-color: var(--articles-background);
+  background-color: var(--works-past-background);
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -121,10 +121,13 @@ a {
 }
 
 .profile {
-  background-color: var(--white);
+  /*background-color: var(--white);*/
   width: 800px;
   height: 300px;
   margin: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
@@ -132,49 +135,65 @@ a {
   width: 250px;
   height: 250px;
   margin: 35px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .history {
-  background-color: var(--white);
+  /*background-color: var(--white);*/
   width: 1300px;
   height: 250px;
   margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .worksText {
-  background-color: var(--white);
+  /*background-color: var(--white);*/
   width: 500px;
   height: 200px;
   margin: 10px 30px;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .worksObjects {
-  background-color: #666;
   width: 1300px;
   height: 500px;
   margin: 10px auto;
   position: relative;
   top: -150px;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.articlesText {
-  background-color: var(--white);
+.worksPastText {
+  /*background-color: var(--white);*/
   width: 500px;
   height: 200px;
   margin: 10px 30px;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.articlesObjects {
-  background-color: #666;
+.worksPastObjects {
   width: 1300px;
   height: 500px;
   margin: 10px auto;
   position: relative;
   top: -150px;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerText {
@@ -182,6 +201,9 @@ a {
   width: 800px;
   height: 100px;
   margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .myName {
@@ -202,4 +224,11 @@ a {
 .snsLinks {
   display: flex;
   flex-direction: column;
+}
+
+.assetImage {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
