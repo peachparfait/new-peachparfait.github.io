@@ -5,8 +5,8 @@ export default function Ad() {
   return (
     <div className="ad">
       <div className="snsLinks">
-        <SNSLink classname="github" link="github" />
-        <SNSLink classname="scratch" link="scratch" />
+        <SNSLink classname="github" src="/assets/github.svg" />
+        <SNSLink classname="scratch" src="/assets/scratch.svg" />
       </div>
       <MyName />
     </div>

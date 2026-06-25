@@ -1,8 +1,13 @@
+import AssetImage from "../assetImage";
 type SNSLinkProps = {
   classname: string;
-  link: string;
+  src: string;
 };
 
-export default function SNSLink({ classname, link }: SNSLinkProps) {
-  return <div className={classname}>{link}</div>;
+export default function SNSLink({ classname, src }: SNSLinkProps) {
+  return (
+  <div className={classname}>
+    <AssetImage src={src} alt="name" className="assetImage" />
+  </div>
+  );
 }

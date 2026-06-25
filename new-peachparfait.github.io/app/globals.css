@@ -23,6 +23,8 @@ html {
 body {
   min-height: 100%;
   margin: 0;
+  padding: 0;
+  width: 100%;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-stack);
@@ -112,7 +114,7 @@ a {
 }
 
 .ad {
-  width: 1300px;
+  width: 95%;
   height: 600px;
   display: flex;
   justify-content: flex-end;
@@ -124,7 +126,7 @@ a {
   /*background-color: var(--white);*/
   width: 800px;
   height: 300px;
-  margin: 10px 30px;
+  margin: 0 0 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +136,7 @@ a {
   background-color: var(--white);
   width: 250px;
   height: 250px;
-  margin: 35px 80px;
+  margin: 35px 0 35px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +151,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-
+.abo
 .worksText {
   /*background-color: var(--white);*/
   width: 500px;
@@ -207,23 +209,20 @@ a {
 }
 
 .myName {
-  background-color: #ccc;
   width: 800px;
   margin: 10px 10px;
 }
 
 .github,
-.scratch,
-.twitter {
-  background-color: #ccc;
+.scratch {
   width: 450px;
-  margin: 10px 10px 0 10px;
   height: 185px;
 }
 
 .snsLinks {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .assetImage {
@@ -231,4 +230,13 @@ a {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  padding: 50px;
+}
+
+.topButton {
+  margin: 10px;
+  width: 70%;
+  height: 70%;
+  z-index: 1000;
+
 }
